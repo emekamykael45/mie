@@ -955,15 +955,6 @@ footer .icons {
         z-index: 7;
     }
 
-    .navbar .mr-right{
-        margin-top: -10px;
-        margin-bottom: 65px;
-    }
-
-    .navbar .mr-right li{
-        margin-bottom: 10px;
-    }
-
     .section {
         padding: 0px 20px;
     }
