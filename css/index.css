@@ -751,7 +751,7 @@ footer .icons {
 
 @media screen and (max-width: 991px){
     .navbar{
-        padding: 7px 30px;
+        padding: 10px 30px;
     }
 
     .navbar .logo img.main{
@@ -951,7 +951,7 @@ footer .icons {
 
 @media screen and (max-width: 767px){
     .navbar{
-        padding: 7px 20px;
+        padding: 10px 20px;
         z-index: 7;
     }
 
@@ -983,7 +983,7 @@ footer .icons {
 
 @media screen and (max-width: 600px){
     .navbar{
-        padding: 7px 10px;
+        padding: 10px 10px;
     }
 
     .section {
