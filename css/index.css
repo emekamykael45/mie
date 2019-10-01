@@ -44,6 +44,10 @@ body {
     background: #F9F8FF;
 }
 
+.h-body {
+    background: linear-gradient(0deg, #F9F8FF 0%, rgba(245, 243, 255, 0) 100%) !important;
+}
+
 
 /* Navbar Starts Here */
 
@@ -540,6 +544,7 @@ body {
     padding-top: 95px !important;
     padding-bottom: 77px !important;
     text-align: center;
+    background: linear-gradient(0deg, #F9F8FF 0%, rgba(245, 243, 255, 0) 100%) !important;
 }
 
 .a-section-one h3 {
@@ -696,6 +701,191 @@ body {
 /* Academy Page Stops Here */
 
 
+/* Post Page Stops Here */
+
+
+.p-body {
+    background: #fff;
+}
+
+.p-content {
+    padding: 0 180px !important;
+    margin-top: 45px;
+    margin-bottom: 0px;
+}
+
+.p-content img {
+    width: 100%;
+    height: 380px;
+    border-radius: 5px;
+    margin-bottom: 52px;
+}
+
+.p-content .p-date {
+    font-size: 0.8em;
+    color: #8691A3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.p-content h3 {
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+    color: #344563;
+    text-decoration: none;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+
+.p-content .category {
+    width: 100%;
+    font-size: 0.8em;
+    justify-content: center;
+    color: #8691A3;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.p-content .category span {
+    margin-right: 10px;
+    color: #8691A3;
+    cursor: text;
+}
+
+.p-content .category p a {
+    color: #6554C0;
+}
+
+.p-content .p-details {
+    font-size: 0.9em;
+    line-height: 25px;
+    color: #344563;
+}
+
+.p-content .p-next-div {
+    margin-top: 90px;
+}
+
+.p-next-div h6 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.p-content .p-next-div .a-section-two {
+    padding-top: 30px !important;
+    padding-bottom: 0px !important;
+}
+
+.p-content .p-next-div .a-section-two .cards .card {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+
+/* Post Page Stops Here */
+
+
+
+/* FAQ Page Starts Here */
+
+
+.f-section-two {
+    background: #fff;
+}
+
+.f-section-two #accordion{
+    margin: 0 auto;
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+    width: 80%;
+}
+
+.f-section-two .card{
+    border: none;
+}
+
+.f-section-two .card-header{
+    padding: 0px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    background: #fff;
+    border: 1px solid #E8EAED;
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.f-section-two .card hr{
+    margin: 0;
+    background: #E8EAED;
+}
+
+.f-section-two .accordion-title{
+    margin: 0;
+    margin-left: -8px;
+    padding: 0px !important;
+}
+
+.f-section-two .accordion-title button {
+    color: #232e44;
+    border: none;
+    text-align: left;
+    font-size: 0.85em;
+    color: #344563;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
+.f-section-two .accordion-title button:focus{
+  outline: 0;
+}
+
+.f-section-two .accordion-title > button:before {
+    float: left !important;
+    font-family: FontAwesome;
+    content:"\002d";
+    color: #344563;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 2px;
+    margin-top: -14px;
+}
+.f-section-two .accordion-title > button.collapsed:before {
+    float: left !important;
+    content:"\002b";
+    color: #344563;
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin: 0;
+    margin-right: 10px;
+    margin-top: -6px;
+}
+.f-section-two .accordion-title > button:hover, 
+.f-section-two .accordion-title > button:active, 
+.f-section-two .accordion-title > button:focus {
+    text-decoration:none;
+    color: #00797D !important;
+}
+
+.f-section-two .card-body{
+    margin-left: 0px;
+    padding: 0px;
+    font-size: 0.95em;
+    line-height: 25px;
+    padding-bottom: 25px;
+    background: #fff;
+}
+
+
+/* FAQ Page Ends Here */
+
+
+
+
 .rule {
     width: 88%;
     background: #C6CCD5;
@@ -719,6 +909,11 @@ footer.main{
 }
 footer.responsive{
     display: none;
+}
+
+footer.p-footer {
+    padding-top: 90px;
+    background: #F9F8FF;
 }
 
 footer .row, footer .col-md-6, footer .columns{
@@ -887,6 +1082,22 @@ footer .icons {
     .section-one .left .banner-form .primary-btn {
         width: 100%;
     }
+
+    /* Post Page Stops Here */
+
+    .p-content .p-next-div .a-section-two .cards .card {
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .p-content .p-next-div .a-section-two .cards .card img {
+        width: 310px;
+        height: 180px;
+    }
+
+    /* Post Page Stops Here */
 }
 
 @media screen and (max-width: 1060px) {
@@ -972,6 +1183,19 @@ footer .icons {
     }
 
     /* Academy Page Stops Here */
+
+    /* Post Page Starts Here */
+
+    .p-content {
+        padding: 0 30px !important;
+        margin-top: 0px;
+    }
+
+    .p-content img {
+        border-radius: 0px;
+    }
+
+    /* Post Page Stops Here */
 
     footer{
         padding-left: 30px;
@@ -1198,6 +1422,14 @@ footer .icons {
 
     /* Academy Page Stops Here */
 
+    /* Post Page Starts Here */
+
+    .p-content {
+        padding: 0 20px !important;
+    }
+
+    /* Post Page Stops Here */
+
     footer{
         padding-left: 20px;
         padding-right: 20px;
@@ -1221,9 +1453,36 @@ footer .icons {
     }
 
     /* Academy Page Stops Here */
+
+    /* Post Page Starts Here */
+
+    .p-content img {
+        height: 300px;
+    }
+
+    .p-content .p-next-div .a-section-two .cards .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .p-content .p-next-div .a-section-two .cards .card img {
+        margin-bottom: 0px;
+    }
+
+    /* Post Page Stops Here */
 }
 
 @media screen and (max-width: 600px){
+    .navbar{
+        padding: 10px 10px;
+    }
+
+    .section {
+        padding: 0px 10px;
+    }
+
     .section-one .left .banner-form .primary-btn {
         left: 32%;
         bottom: 50px;
@@ -1237,21 +1496,38 @@ footer .icons {
         z-index: 1 !important;
         margin-bottom: -24px;
     }
-}
 
-@media screen and (max-width: 600px){
-    .navbar{
-        padding: 10px 10px;
+    /* Post Page Starts Here */
+
+    .p-content {
+        padding: 0 10px !important;
     }
 
-    .section {
-        padding: 0px 10px;
-    }
+    /* Post Page Stops Here */
 
     footer{
         padding-left: 10px;
         padding-right: 10px;
     }
+}
+
+@media screen and (max-width: 550px){
+    /* FAQ Page Starts Here */
+
+    .f-section-two #accordion{
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+        width: 100%;
+    }
+
+    .f-section-two .accordion-title > button:before {
+        height: 50px;
+    }
+    .f-section-two .accordion-title > button.collapsed:before {
+        height: 50px;
+    }
+
+    /* FAQ Page Stops Here */
 }
 
 @media screen and (max-width: 540px){
@@ -1275,6 +1551,27 @@ footer .icons {
         left: 28%;
         bottom: 50px;
     }
+
+    /* Post Page Starts Here */
+
+    .p-content img {
+        height: 250px;
+    }
+
+    /* Post Page Stops Here */
+}
+
+@media screen and (max-width: 450px){
+    /* FAQ Page Starts Here */
+
+    .f-section-two .accordion-title > button:before {
+        height: 75px;
+    }
+    .f-section-two .accordion-title > button.collapsed:before {
+        height: 70px;
+    }
+
+    /* FAQ Page Stops Here */
 }
 
 @media screen and (max-width: 440px){
@@ -1308,6 +1605,14 @@ footer .icons {
         text-align: center;
     }
 
+    /* Post Page Starts Here */
+
+    .p-content img {
+        height: 200px;
+    }
+
+    /* Post Page Stops Here */
+
     footer{
         padding: 25px 10px;
     }
@@ -1334,6 +1639,15 @@ footer .icons {
     }
 
     /* Academy Page Stops Here */
+
+    /* Post Page Starts Here */
+
+    .p-content .p-next-div .a-section-two .cards .card img {
+        width: 100%;
+        height: 170px;
+    }
+
+    /* Post Page Stops Here */
 
     footer.main{
         display: none;
