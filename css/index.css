@@ -1245,9 +1245,17 @@ footer .icons {
         text-align: center;
     }
 
+    .section-one .left .banner-form {
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
     .section-one .left .banner-form input {
         width: 100%;
-        display: none;
+        text-align: center;
+        margin-right: 0px;
     }
 
     .section-one .left .banner-form .primary-btn {
@@ -1255,10 +1263,6 @@ footer .icons {
         padding: 18px 45px;
         padding-top: 19px;
         font-size: 1em;
-        position: absolute;
-        left: 38%;
-        bottom: 50px;
-        z-index: 2 !important;
     }
 
     .section-one img {
@@ -1658,9 +1662,8 @@ footer .icons {
 }
 
 @media screen and (max-width: 350px){
-    .section-one .left .banner-form .primary-btn {
-        left: 17%;
-        bottom: 25px;
+    .section-one .left .banner-form {
+        width: 100%;
     }
 
     .section-one img {
