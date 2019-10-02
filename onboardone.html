@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Moneymie | Sign Up</title>
+        <title>Moneymie | Onboarding</title>
         <link rel="icon" href="images/favicon.png" />
         
         <!-- Bootstrap CSS CDN -->
@@ -36,7 +36,7 @@
                 <span class="navbar-toggler-icon"><img class="open-nav" src="images/menu.png"></span>
             </button>
 
-            <div class="collapse navbar-collapse not-signed-in" id="navbarsExample08">
+            <!-- <div class="collapse navbar-collapse not-signed-in" id="navbarsExample08">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a href="how-to-moneymie.html" class="links">How to Moneymie</a>
@@ -60,9 +60,9 @@
                         <a href="sign-up.html" class="links sign-up">Start Investing</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
-            <!-- <div class="collapse navbar-collapse signed-in" id="navbarsExample08">
+            <div class="collapse navbar-collapse signed-in" id="navbarsExample08">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a href="offers.html" class="links">All Offers</a>
@@ -93,7 +93,7 @@
                         </div>
                     </li>
                 </ul>
-            </div> -->
+            </div>
         </nav>
         <!-- Navbar Ends Here -->
 
@@ -101,53 +101,73 @@
         
         <div class="main" id="main">
             
-            <div class="content">
+            <div class="content onboard">
                 
-                <img src="images/sign-up-side-img.png" />
+                <div class="left">
+                    <img src="images/logo.png" class="logo" />
 
-                <div class="form-div">
+                    <h3>Welcome to Moneymie,<br /><span>Oluwaleke!</span></h3>
+                    <p>Please select the plan that best fits you and complete your profile KYC to start investing</p>
 
-                    <form class="form">
-                        <h3>Sign Up</h3>
+                    <div class="progress-div">
+                        <img src="images/progress-img.png">
+                    </div>
+                </div>
 
-                        <div class="form-row">
-                            <div class="form-group col-lg-6">
-                                <input type="name" class="form-control" placeholder="First Name" required>
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <input type="name" class="form-control" placeholder="Last Name" required>
-                            </div>
+                <div class="right">
+                    <p>Are you familiar with investing outside the US?</p>
+
+                    <div class="option">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                            <label class="custom-control-label" for="customControlAutosizing">
+                                Yes, I am
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
+                            <label class="custom-control-label" for="customControlAutosizing2">
+                                No, I am not
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control" placeholder="Phone Number" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password" required>
-                        </div>
-                        <div class="check">
+                    </div>
+
+                    <p>Great! Moneymie will help you find more opportunities. <br />Choose one of our plans that best suits you.</p>
+
+                    <div class="option-cards">
+                        <div class="card">
                             <div class="custom-control custom-checkbox mr-sm-2">
-                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                                <label class="custom-control-label" for="customControlAutosizing">
-                                    I agree to Moneymie's Registration Terms and Conditions
-                                </label>
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing3">
+                                <label class="custom-control-label" for="customControlAutosizing3"></label>
                             </div>
+
+                            <img src="images/diy.png" />
+                            <h6>DIY - Do it yourself</h6>
+                            <p>Invest in fund from our global list
+                                <br />Fund Monitoring Dashboard
+                                <br />24/7 Email/Chat Support
+                                <br />0.25% annual fee</p>
                         </div>
+                        <div class="card">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing4">
+                                <label class="custom-control-label" for="customControlAutosizing4"></label>
+                            </div>
 
-                        <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <img src="images/error-alert.png" />
-                            Error! Please check the highlighted fields and correct them
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div> -->
+                            <img src="images/auto-pilot.png" />
+                            <h6>AutoPilot</h6>
+                            <p>All standard features plus
+                                <br />Recommended Investments
+                                <br />Auto Dividends Reinvestment
+                                <br />Tax Loss Monitoring
+                                <br />Phone Support with our RIAs
+                                <br />1% annual fee</p>
+                        </div>
+                    </div>
 
+                    <div class="btn-div">
                         <button type="submit" class="btn sign-up-btn">Start Investing</button>
-                        <p class="already">Already have an account? <a href="sign-in.html">Sign In</a></p>
-                    </form>
-
+                    </div>
                 </div>
 
             </div>
