@@ -174,7 +174,7 @@ body {
 }
 
 .nav-item.dropdown .dropdown-menu hr {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
 
@@ -492,6 +492,17 @@ body {
     padding: 13px;
     margin-top: 80px;
     width: 70%;
+}
+
+.content.onboard .form .ui.selection.active.dropdown {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.content.onboard .form .ui.selection.active.dropdown:hover {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 

@@ -186,7 +186,7 @@ body {
 }
 
 .nav-item.dropdown .dropdown-menu hr {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
 
@@ -280,8 +280,8 @@ body {
 }
 
 .section-one img {
-    width: 596px;
-    height: 599px;
+    width: 525px;
+    height: 594px;
     margin-bottom: -33px;
 }
 
@@ -424,7 +424,7 @@ body {
 }
 
 .section-four .card {
-    padding: 2em 4em;
+    padding: 2em 3.5em;
     background: transparent;
     border: none;
     border-radius: 0px;
@@ -1068,7 +1068,7 @@ footer .icons {
     }
 
     .section-one img {
-        width: 496px;
+        width: 425px;
         height: 499px;
         margin-bottom: 0px;
     }
@@ -1212,7 +1212,7 @@ footer .icons {
 
 @media screen and (max-width: 920px){
     .section-one img {
-        width: 396px;
+        width: 325px;
         height: 399px;
         margin-top: 70px;
     }
@@ -1266,7 +1266,7 @@ footer .icons {
     }
 
     .section-one img {
-        width: 496px;
+        width: 425px;
         height: 499px;
         margin: 0 auto;
         margin-top: -110px;
@@ -1326,7 +1326,7 @@ footer .icons {
 
     .section-four .card {
         padding: 0em 3em;
-        text-align: center;
+        text-align: left;
     }
 
     .section-four .card.first {
@@ -1493,7 +1493,7 @@ footer .icons {
     }
 
     .section-one img {
-        width: 396px;
+        width: 325px;
         height: 399px;
         margin: 0 auto;
         margin-top: -110px;
@@ -1585,7 +1585,7 @@ footer .icons {
     }
 
     .section-one img {
-        width: 296px;
+        width: 255px;
         height: 299px;
         margin: 0 auto;
         margin-top: -90px;
@@ -1606,7 +1606,7 @@ footer .icons {
 
     .section-four .card {
         padding: 0em 1em;
-        text-align: center;
+        text-align: left;
     }
 
     /* Post Page Starts Here */
@@ -1667,7 +1667,7 @@ footer .icons {
     }
 
     .section-one img {
-        width: 236px;
+        width: 205px;
         height: 239px;
         margin: 0 auto;
         margin-top: -90px;
