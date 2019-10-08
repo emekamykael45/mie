@@ -250,6 +250,11 @@ body {
     border-bottom: 1px solid #00797D !important;
 }
 
+.form-div .form-group input.form-control-file {
+    direction: rtl;
+    width: -webkit-fill-available;
+}
+
 .form-div .dropdown {
     margin-bottom: 40px;
     padding-left: 0px !important;
