@@ -100,7 +100,7 @@
         <!-- Main Page Content Starts Here -->
         <div class="main" id="main">
             
-            <div class="section section-one">
+            <div class="section section-one sectionone" id="sectionone">
                 <div class="left">
                     <p class="head-text">Become a global investor in 60 seconds with as little as $100</p>
                     <p class="sub-head-text">Moneymie helps to grow your money via deposit investments anywhere in the world. <span>APR from 5%.</span></p>
@@ -109,8 +109,7 @@
                         <button class="primary-btn">Start Investing</button>
                     </form>
                 </div>
-                <img src="images/banner-img.png">
-                <!-- <img src="images/banner-imgg.png"> -->
+                <img src="images/res-banner-img-1.svg" class="banner-img" id="bannerImg">
             </div>
 
             <div class="section section-two">
@@ -200,6 +199,28 @@
                     </div>
                 </div>
             </div>
+
+            <div class="section section-five">
+                <p>
+                    Moneymie LLC (‘Moneymie’) is a SEC registered investment adviser. By using this website, you accept our Terms of Use and Privacy Policy. Moneymie’s investment advisory services are available only to residents of the United States. and in jurisdictions where Moneymie is registered. This website is not an offer, solicitation of an offer, or advice to buy or sell securities in jurisdictions where Moneymie LLC is not registered. In order to open a Moneymie account, you must be at least 18 years of age.
+                    <br/><br/>
+
+                    Products offered by Moneymie LLC  are Not FDIC Insured, Not Bank Guaranteed, and May Lose Value. Investing in emerging market securities as in all securities involves risks, and there is always the potential of losing money when you invest in securities. Before investing, consider your investment objectives and Moneymie LLC’s charges and other custodial expenses/fees.
+                    <br/><br/>
+
+                    Moneymie LLC’s internet-based advisory services are designed to assist clients (individuals and firms) in achieving discrete financial goals. They are not intended to provide comprehensive tax advice or financial planning with respect to every aspect of a client's financial situation and do not incorporate specific investments that clients hold elsewhere. For more details, see our Form ADV Part II and other disclosures. Past performance does not guarantee future results, and the likelihood of investment outcomes are hypothetical in nature.
+                    <br/><br/>
+
+                    All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
+                    <br/><br/>
+
+                    Email: support@moneymie.com <br/>Tel: (352)7770340
+                    <br/><br/>
+
+                    Information provided by Moneymie Support is for informational and general educational purposes only and is not investment or financial advice.
+                    Google Play and the Google Play logo are trademarks of Google, Inc. Apple, the Apple logo, and iphone are trademarks of Apple, Inc., registered in the U.S.
+                </p>
+            </div>
                 
         </div>
 
@@ -274,6 +295,46 @@
                     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
                 });
             });
+        </script>
+
+        <!-- Homepage Change Banner Images -->
+        <script>
+            $(function() {
+                var banner = $('#sectionone');
+                var backgrounds = new Array(
+                'url(images/banner-img-1.svg)',
+                'url(images/banner-img-2.svg)',
+                'url(images/banner-img-3.svg)'
+                );
+                var current = 0;
+
+                function nextBackground() {
+                banner.css(
+                'background-image',
+                backgrounds[current = ++current % backgrounds.length]
+                );
+
+                setTimeout(nextBackground, 7000);
+                }
+                setTimeout(nextBackground, 7000);
+                banner.css('background-image', backgrounds[0]);
+            });
+        </script>
+
+        <!-- Homepage Change Responsive Banner Images -->
+        <script>
+            var image = document.getElementById("bannerImg");
+            var currentPos = 0;
+            var images = ["images/res-banner-img-1.svg", "images/res-banner-img-2.svg", "images/res-banner-img-3.svg"]
+
+            function volgendefoto() {
+                if (++currentPos >= images.length)
+                    currentPos = 0;
+
+                image.src = images[currentPos];
+            }
+
+            setInterval(volgendefoto, 3000);
         </script>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

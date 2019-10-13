@@ -219,18 +219,25 @@ body {
 
 .section-one {
     background: linear-gradient(0deg, #F9F8FF 0%, rgba(245, 243, 255, 0) 100%);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+    margin-top: -75px;
+    margin-bottom: -32px;
 }
 
 .section-one .left {
-    margin-top: 150px;
+    align-self: center;
+    /*margin-top: 195px;*/
 }
 
 .section-one .left .head-text {
-    font-size: 2.7em;
+    font-size: 2.65em;
     line-height: 60px;
     font-weight: bold;
     color: #344563;
@@ -247,7 +254,7 @@ body {
 
 .section-one .left .banner-form {
     margin-top: 37px;
-    margin-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 .section-one .left .banner-form input {
@@ -255,7 +262,6 @@ body {
     font-size: 0.95em;
     font-family: 'Rubik', sans-serif;
     width: 50%;
-    margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid #C1C7D0;
     border-radius: 0px;
@@ -279,10 +285,8 @@ body {
     cursor: pointer;
 }
 
-.section-one img {
-    width: 525px;
-    height: 594px;
-    margin-bottom: -33px;
+.banner-img {
+    display: none !important;
 }
 
 .section-two {
@@ -504,22 +508,27 @@ body {
 
 .section-four .hero {
     margin-top: 112px;
+    margin-bottom: 87px;
+    padding-bottom: 87px;
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid #C6CCD5;
 }
 
 .section-four .hero h1 {
+    margin: 0;
     font-size: 2.3em;
 }
 
 .section-four .hero div p {
-    margin-top: 60px;
+    margin: 0;
+    margin-top: 35px;
 }
 
 .section-four .hero .primary-btn {
     background: #64C8BC;
     border-radius: 3px;
-    padding: 13px 35px;
+    padding: 15px 35px;
     padding-top: 14px;
     font-family: 'Rubik', sans-serif;
     font-size: 0.9em;
@@ -530,6 +539,16 @@ body {
 
 .section-four .hero .primary-btn:hover {
     text-decoration: none;
+}
+
+.section-five {
+    width: 100%;
+}
+
+.section-five p {
+    margin: 0 auto;
+    color: #000000;
+    width: 95%;
 }
 
 
@@ -1064,7 +1083,7 @@ footer .icons {
 
 @media screen and (max-width: 1260px) {
     .section-one .left {
-        margin-top: 80px;
+        /*margin-top: 80px;*/
     }
 
     .section-one img {
@@ -1077,6 +1096,7 @@ footer .icons {
 @media screen and (max-width: 1118px) {
     .section-one .left .banner-form input {
         width: 100%;
+        margin-bottom: 15px;
     }
 
     .section-one .left .banner-form .primary-btn {
@@ -1123,6 +1143,10 @@ footer .icons {
         padding-left: 40px;
         padding-right: 40px;
     }
+}
+
+@media screen and (max-width: 1028px) {
+    
 }
 
 @media screen and (max-width: 1017px){
@@ -1210,14 +1234,6 @@ footer .icons {
     }
 }
 
-@media screen and (max-width: 920px){
-    .section-one img {
-        width: 325px;
-        height: 399px;
-        margin-top: 70px;
-    }
-}
-
 @media screen and (max-width: 900px){
     .section-four .hero {
         margin-top: 112px;
@@ -1243,6 +1259,12 @@ footer .icons {
         grid-template-columns: 1fr;
         grid-gap: 30px;
         text-align: center;
+        height: 100%;
+        background-image: none !important;
+    }
+
+    .section-one .left .head-text {
+        margin-top: 160px;
     }
 
     .section-one .left .banner-form {
@@ -1259,19 +1281,20 @@ footer .icons {
     }
 
     .section-one .left .banner-form .primary-btn {
-        width: fit-content;
+        width: 100%;
         padding: 18px 45px;
         padding-top: 19px;
         font-size: 1em;
     }
 
-    .section-one img {
+    .banner-img {
+        display: block !important;
         width: 425px;
-        height: 499px;
+        height: 489px;
         margin: 0 auto;
-        margin-top: -110px;
+        margin-top: -100px;
         z-index: 1 !important;
-        margin-bottom: -29px;
+        margin-bottom: 5px;
     }
 
     .section-two {
@@ -1492,13 +1515,13 @@ footer .icons {
         bottom: 50px;
     }
 
-    .section-one img {
-        width: 325px;
-        height: 399px;
+    .banner-img {
+        width: 285px;
+        height: 319px;
         margin: 0 auto;
-        margin-top: -110px;
+        margin-top: -70px;
         z-index: 1 !important;
-        margin-bottom: -24px;
+        margin-bottom: 15px;
     }
 
     /* Post Page Starts Here */
