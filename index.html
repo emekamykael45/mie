@@ -109,7 +109,7 @@
                         <button class="primary-btn">Start Investing</button>
                     </form>
                 </div>
-                <img src="images/res-banner-img-1.svg" class="banner-img" id="bannerImg">
+                <!-- <img src="images/res-banner-img-1.svg" class="banner-img" id="bannerImg"> -->
             </div>
 
             <div class="section section-two">
@@ -141,22 +141,31 @@
                 <h4>Investment solutions tailored <br/>to your needs</h4>
                 <div class="cards">
                     <div class="card">
-                        <img src="images/rates.png">
+                        <img src="images/rates.svg">
                         <h6>Higher interest rates</h6>
                         <p>Enjoy high interest rates and deals that you can’t get with a regular savings account. Withdraw at anytime with no penalty.</p>
-                        <p class="link"><a href="#"><i class="fas fa-chevron-right"></i>Find out more how</a></p>
+                        <a href="#">
+                            <img src="images/find-icon.svg">
+                            <p>Find out more</p>
+                        </a>
                     </div>
                     <div class="card">
-                        <img src="images/kyc.png">
+                        <img src="images/kyc.svg">
                         <h6>Simple straightforward KYC</h6>
                         <p>Escape strenuous non-residency restrictions by becoming part of our mutual fund structure, and invest like high net worth individuals do!</p>
-                        <p class="link"><a href="#"><i class="fas fa-chevron-right"></i>Find out more how</a></p>
+                        <a href="#">
+                            <img src="images/find-icon.svg">
+                            <p>Find out more</p>
+                        </a>
                     </div>
                     <div class="card">
-                        <img src="images/cash-back.png">
+                        <img src="images/cash-back.svg">
                         <h6>Cheap and Efficient Transfers</h6>
                         <p>Using stable coins, Moneymie is able to offer you a very affordable way to grow your money without the forex risk.</p>
-                        <p class="link"><a href="#"><i class="fas fa-chevron-right"></i>Find out more how</a></p>
+                        <a href="#">
+                            <img src="images/find-icon.svg">
+                            <p>Find out more</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -171,22 +180,52 @@
                     <div class="card">
                         <h5 class="center">AutoPilot Plan</h5>
                         <div class="lists">
-                            <p><i class="fas fa-check"></i>All standard features plus.</p>
-                            <p><i class="fas fa-check"></i>Recommended investments.</p>
-                            <p><i class="fas fa-check"></i>Auto Dividends Reinvestment.</p>
-                            <p><i class="fas fa-check"></i>Tax Loss Monitoring.</p>
-                            <p><i class="fas fa-check"></i>Phone Support with our RIAs.</p>
-                            <p><i class="fas fa-check"></i>1% annual fee.</p>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>All standard features plus.</p>
+                            </div>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>Recommended investments.</p>
+                            </div>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>Auto Dividends Reinvestment.</p>
+                            </div>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>Tax Loss Monitoring.</p>
+                            </div>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>Phone Support with our RIAs.</p>
+                            </div>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>1% annual fee.</p>
+                            </div>
                         </div>
                         <button class="select-btn">Select</button>
                     </div>
                     <div class="card">
                         <h5 class="center">DIY - Do It Yourself</h5>
                         <div class="lists">
-                            <p><i class="fas fa-check"></i>Choose funds you want to invest in from our global list.</p>
-                            <p><i class="fas fa-check"></i>Fund Monitoring Dashboard.</p>
-                            <p><i class="fas fa-check"></i>24/7 Email/Chat Support.</p>
-                            <p><i class="fas fa-check"></i>0.25% annual fee.</p>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>Choose funds you want to invest in from our global list.</p>
+                            </div>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>Fund Monitoring Dashboard.</p>
+                            </div>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>24/7 Email/Chat Support.</p>
+                            </div>
+                            <div class="list">
+                                <img src="images/plans-icon.svg">
+                                <p>0.25% annual fee.</p>
+                            </div>
                         </div>
                         <button class="select-btn">Select</button>
                     </div>
@@ -224,8 +263,6 @@
                 
         </div>
 
-        <hr class="rule" />
-
         <footer class="main">
 
             <div class="section columns-row">
@@ -258,7 +295,7 @@
                     </div>
                 </div>
 
-                <div class="columns">
+                <div class="columns last">
                     <p class="footer-link-header-text">Stay Connected</p>
                     <p class="join">Join our mailing list to get the latest updates. We promise not to spam you.</p>
                     <form class="footer-form">
@@ -268,19 +305,9 @@
                 </div>
             </div>
 
-        </footer>
+            <hr class="rule" />
 
-        <footer class="responsive">
-            
-            <h3>MONEYMIE</h3>
-
-            <p class="copy">Copyright 2019 Moneymie Nigeria Limited</p>
-
-            <div class="icons">
-                <a href="www.facebook.com"><img src="images/facebook-icon.png"></a>
-                <a href="www.twitter.com"><img src="images/twitter-icon.png"></a>
-                <a href="www.gmail.com"><img src="images/gmail-icon.png"></a>
-            </div>
+            <p class="copy">© Copyright 2019 Moneymie Financial, Inc.</p>
 
         </footer>
 
@@ -314,15 +341,15 @@
                 backgrounds[current = ++current % backgrounds.length]
                 );
 
-                setTimeout(nextBackground, 7000);
+                setTimeout(nextBackground, 10000);
                 }
-                setTimeout(nextBackground, 7000);
+                setTimeout(nextBackground, 10000);
                 banner.css('background-image', backgrounds[0]);
             });
         </script>
 
         <!-- Homepage Change Responsive Banner Images -->
-        <script>
+        <!-- <script>
             var image = document.getElementById("bannerImg");
             var currentPos = 0;
             var images = ["images/res-banner-img-1.svg", "images/res-banner-img-2.svg", "images/res-banner-img-3.svg"]
@@ -335,7 +362,7 @@
             }
 
             setInterval(volgendefoto, 3000);
-        </script>
+        </script> -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
