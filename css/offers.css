@@ -754,6 +754,9 @@ h1, h2, h3, h4, h5 {
     padding: 5px 15px;
     margin-top: 24px;
 }
+.content .left .stats.last.offers {
+    margin-top: -100px;
+}
 
 .content .left .stats .stat-buttons {
     padding: 0px 15px;
@@ -768,14 +771,13 @@ h1, h2, h3, h4, h5 {
     border-radius: 2.5px;
 }
 
-.content .left .stats .stat-buttons a.fund {
+.stat-buttons a.fund {
     color: #fff;
     background: #64C8BC;
 }
-.content .left .stats .stat-buttons a.withdraw {
+.stat-buttons a.withdraw {
     color: #64C8BC;
-    background: #64C8BC;
-    opacity: 0.1;
+    background: rgba(100, 200, 188, 0.1);
 }
 
 
@@ -864,8 +866,8 @@ h1, h2, h3, h4, h5 {
 .cards-row .card .info p span {
     color: #2CA4E8;
     padding: 3px 10px;
-    background: #2CA4E8;
-    opacity: 0.1;
+    background: rgba(44, 164, 232, 0.1);
+    font-size: 0.8em;
     border-radius: 32px;
     margin-left: 15px;
 }
@@ -918,6 +920,9 @@ h1, h2, h3, h4, h5 {
     color: #344563;
     border-bottom: 1px solid #E8EAED;
 }
+.content .right .table tbody tr:last-child td {
+    border-bottom: none;
+}
 
 .content .right .table tbody tr td.reinvested {
     color: #64C8BC;
@@ -932,6 +937,45 @@ h1, h2, h3, h4, h5 {
 
 
 /*Dashboard Page Stops Here*/
+
+
+/*Wallet Page Stops Here*/
+
+.content.wallet .right .card .info h5 {
+    font-size: 1.35em;
+}
+
+.content.wallet .right .card .stat-buttons {
+    margin-top: 15px;
+}
+
+.content.wallet .right .card .stat-buttons a {
+    font-size: 0.9em;
+    padding: 7px 15px;
+    border-radius: 2.5px;
+}
+
+.content.wallet .right .card .stat-buttons a.fund {
+    color: #fff;
+    background: #64C8BC;
+    margin-right: 10px;
+}
+.content.wallet .right .card .stat-buttons a.withdraw {
+    color: #64C8BC;
+    background: rgba(100, 200, 188, 0.1);
+}
+
+.content.wallet .right .table tbody tr td.funding {
+    color: #64C8BC;
+}
+.content.wallet .right .table tbody tr td.withdrawal {
+    color: #FF6161;
+}
+.content.wallet .right .table tbody tr td.investment {
+    color: #2CA4E8;
+}
+
+/*Wallet Page Stops Here*/
 
 
 /* Footer Starts Here */

@@ -1234,9 +1234,10 @@ footer .copy {
 
 @media screen and (max-width: 900px){
     .hero {
-        margin-top: 112px;
         display: block;
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .hero h1 {
